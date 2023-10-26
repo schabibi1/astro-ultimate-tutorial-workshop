@@ -1,17 +1,19 @@
 ---
 import { storyblokEditable } from "@storyblok/astro";
+import { Image } from "astro:assets";
 
 const { blok } = Astro.props;
-console.log(blok);
 ---
 
 <div
   {...storyblokEditable(blok)}
   class="w-full bg-[#f7f6fd] rounded-[5px] text-center overflow-hidden"
 >
-  <img
+  <Image
     src={blok.image.filename}
     alt={blok.image.alt}
+    width="200"
+    height="150"
     class="w-full h-48 xl:h-72 object-contain"
   />
   <div class="px-12 py-6">
