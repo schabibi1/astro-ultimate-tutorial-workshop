@@ -16,10 +16,11 @@ This is a workshop blog example of how to use [Astro](https://astro.build) with 
 
 - I don't think my environment variable is working. → Make sure you have `.env` file in the **root directory** and it has `STORYBLOK_TOKEN` variable with your Storyblok **preview** API key token. (i.e. `STORYBLOK_TOKEN=your-token`)
 
-- Storyblok CLI retunrs and error when I run `storyblok push-components` → Logout once if you already have used Storyblok CLI before. Then, login again with `storyblok login` command.
+- Storyblok CLI retunrs errors when I run `storyblok push-components` → Logout once if you already have used Storyblok CLI. Then, login again with `storyblok login` command.
 
 ```bash
 storyblok logout
+storyblok login
 ```
 
 ## 📝 Additional resources
